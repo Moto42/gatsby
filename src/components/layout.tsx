@@ -12,7 +12,7 @@ type LayoutProps = {
     pageTitle: string;
 }
 
-const Layout : React.FC = ({pageTitle, children}: React.PropsWithChildren<LayoutProps>) => {
+const Layout : React.FC<React.PropsWithChildren<LayoutProps>> = ({pageTitle, children}) => {
     return (
         <div className={container}>
             <nav>
