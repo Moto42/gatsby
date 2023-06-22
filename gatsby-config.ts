@@ -11,7 +11,8 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx", {
+    "gatsby-plugin-mdx",
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "pages",
