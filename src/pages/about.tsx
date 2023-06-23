@@ -1,6 +1,7 @@
 import * as React from 'react';
 import type { HeadFC, PageProps} from "gatsby";
 import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const AboutPage : React.FC<PageProps>= () => {
     return (
@@ -10,6 +11,6 @@ const AboutPage : React.FC<PageProps>= () => {
     );
 };
 
-export const Head : HeadFC = () => <title>About Me</title>
+export const Head: HeadFC = () => <Seo title="About Me"/>
 
 export default AboutPage;

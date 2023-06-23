@@ -19,6 +19,13 @@ const config: GatsbyConfig = {
       },
       __key: "pages"
     },
+    { resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "blog",
+        "path": "./blog/"
+      },
+      __key: "blog"
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
   ]
