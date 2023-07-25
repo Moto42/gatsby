@@ -10,7 +10,7 @@ const BlogPage:React.FC<PageProps<Queries.BlogIndexQuery>> = ({ data }) => {
         data.allMdx.nodes.map(node => {
           return <article> 
             <h2>
-              <Link to={`/blob/${node.frontmatter?.slug}`}>
+              <Link to={`/blog/${node.frontmatter?.slug}`}>
                 {node.frontmatter?.title}
               </Link>
             </h2>
