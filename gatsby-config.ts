@@ -26,6 +26,7 @@ const config: GatsbyConfig = {
       },
       __key: "blog"
     },
+    "gatsby-plugin-mdx",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
   ]
