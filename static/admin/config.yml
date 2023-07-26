@@ -1,7 +1,12 @@
 backend:
-  name: git-gateway  
-  branch: master # Branch%20to update (optional; defaults to master)
-  repo
+  name: github 
+  repo: Moto42/gatsby
+  # Branch to update (optional; defaults to master)
+  branch: master 
+  api_root: https://api.github.com
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  cms_label_prefix: decap_cms
 
 # publish_mode: editorial_workflow
 
