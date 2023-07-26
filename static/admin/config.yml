@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway  
+  branch: master # Branch%20to update (optional; defaults to master)
+  repo
+
+# publish_mode: editorial_workflow
+
+# Media files will be stored in the repo under images/uploads
+media_folder: "src/images" 
+
+collections: 
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    creat: true
+    slug: "{{slug}}"
+    fields: 
+      - {(label: "title", name: "title", widget: "string"}
+      - {(label: "date", name: "date", widget: "string"}
+      - {(label: "slug", name: "slug", widget: "string"}
+      - {(label: "hero_image", name: "hero_image", widget: "string"}
+      - {(label: "hero_image_alt", name: "hero_image_alt", widget: "string"}
+      - {(label: "hero_image_credit_text", name: "hero_image_credit_text", widget: "string"}
+      - {(label: "hreo_image_credit_link", name: "hreo_image_credit_link", widget: "string"}
+      - {(label: "Body", name: "body", widget: "markdown"}
