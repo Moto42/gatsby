@@ -2,7 +2,7 @@ backend:
   name: github 
   repo: Moto42/gatsby
   # Branch to update (optional; defaults to master)
-  branch: master 
+  branch: main
   api_root: https://api.github.com
   base_url: https://api.netlify.com
   auth_endpoint: auth
@@ -16,8 +16,8 @@ media_folder: "src/images"
 collections: 
   - name: "blog"
     label: "Blog"
-    folder: "blog"
-    creat: true
+    folder: "/blog"
+    create: true
     slug: "{{slug}}"
     fields: 
       - {(label: "title", name: "title", widget: "string"}
